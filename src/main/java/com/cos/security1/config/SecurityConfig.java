@@ -30,6 +30,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 // 권한이 없는 페이지로 접속 시 로그인 주소("/login")로 이동할 수 있도록 설정
                 .and()
                 .formLogin()
-                .loginPage("/login");
+                .loginPage("/loginForm");
     }
 }

@@ -29,9 +29,14 @@ public class IndexController {
 
     // 스프링 시큐리티가 해당 주소를 낚아 채서 로그창으로 보냄
     // >> SecurityConfig 설정 후 작동 안함
-    @GetMapping("/login")
-    public String login() {
+    @GetMapping("/loginForm")
+    public String loginForm() {
         return "loginForm";
+    }
+
+    @GetMapping("/joinForm")
+    public String joinForm() {
+        return "joinForm";
     }
 
     @GetMapping("/join")
@@ -39,8 +44,4 @@ public class IndexController {
         return "join";
     }
 
-    @GetMapping("/joinProc")
-    public @ResponseBody String joinProc() {
-        return "회원가입 완료됨!";
-    }
 }
