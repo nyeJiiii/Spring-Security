@@ -30,8 +30,8 @@ public class IndexController {
     // 스프링 시큐리티가 해당 주소를 낚아 채서 로그창으로 보냄
     // >> SecurityConfig 설정 후 작동 안함
     @GetMapping("/login")
-    public @ResponseBody String login() {
-        return "login";
+    public String login() {
+        return "loginForm";
     }
 
     @GetMapping("/join")
